@@ -14,6 +14,8 @@ describe("API tests", () => {
    expect(response.body.books[0].title).to.eql("Git Pocket Guide");
    expect(response.body.books[4].author).to.include("Kyle Simpson");
    isbn = response.body.books[7].isbn;
+   console.log(password);
+   console.log(process.env.SECRET_PASSWORD);
   });
 
   it.skip("create account", async () => {
